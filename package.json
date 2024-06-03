@@ -1,0 +1,14 @@
+{
+  "name": "cypress_alura",
+  "version": "1.0.0",
+  "description": "Teste E2E do curso da alura",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raphael Baqueta",
+  "license": "ISC",
+  "devDependencies": {
+    "mochawesome": "^7.1.3"
+  }
+}
