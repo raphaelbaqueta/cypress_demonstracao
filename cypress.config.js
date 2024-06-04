@@ -9,10 +9,12 @@ module.exports = defineConfig({
     video: true,
     reporter: 'mochawesome',
     reporterOptions: {
-      reportDir: 'cypress/results',
+      reportDir: 'cypress/report',
+      reportFilename: "[name]_[status]_[datetime]--report",
       overwrite: false,
       html: true,
-      json: false,
-      timestamp: "mmddyyyy_HHMMss" }
+      json: true,
+      timestamp: "ddmmyyyy_HHMMss" }
   },
 });
+

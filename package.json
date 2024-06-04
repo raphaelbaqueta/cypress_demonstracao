@@ -9,6 +9,14 @@
   "author": "Raphael Baqueta",
   "license": "ISC",
   "devDependencies": {
-    "mochawesome": "^7.1.3"
+    "cypress": "^13.10.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "dependencies": {
+    "-": "^0.0.1",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "save-dev": "^0.0.1-security"
   }
 }
