@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-06-08T19:12:38.936Z",
+    "end": "2024-06-08T19:12:44.400Z",
+    "duration": 5464,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f897669c-32db-46a2-8fa5-75eae88cb0f9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cadastro-correto.cy.js",
+      "file": "cypress\\e2e\\cadastro-correto.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "455afb1a-226b-4d4d-a3ed-2b4428321251",
+          "title": "Pagina de cadastro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve preencher os campos do cadastro corretamente e clicar no botao cadastrar",
+              "fullTitle": "Pagina de cadastro Deve preencher os campos do cadastro corretamente e clicar no botao cadastrar",
+              "timedOut": null,
+              "duration": 3205,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.cadastrar('Raphael Baqueta', 'teste38@teste.com', 'Senha123');",
+              "err": {},
+              "uuid": "680ee24d-7ab6-4eb8-811d-e29bd67c8dfb",
+              "parentUUID": "455afb1a-226b-4d4d-a3ed-2b4428321251",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "680ee24d-7ab6-4eb8-811d-e29bd67c8dfb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3205,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[name]_[status]_[datetime]--report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report",
+        "reportFilename": "[name]_[status]_[datetime]--report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "ddmmyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
