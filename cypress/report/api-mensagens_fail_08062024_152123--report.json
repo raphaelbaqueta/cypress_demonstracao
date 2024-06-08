@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-06-08T18:21:22.613Z",
+    "end": "2024-06-08T18:21:23.790Z",
+    "duration": 1177,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0631d25f-d985-4ba9-a16e-c1ee2d0cb2cc",
+      "title": "",
+      "fullFile": "cypress\\e2e\\api-mensagens.cy.js",
+      "file": "cypress\\e2e\\api-mensagens.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2cf654a0-4d87-4324-aeb2-e59f3798836a",
+          "title": "Api Adopet",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Mensagens da API",
+              "fullTitle": "Api Adopet Mensagens da API",
+              "timedOut": null,
+              "duration": 1022,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'GET',\n  url: 'https://adopet-api-i8qu.onrender.com/mensagem/11643cd6-7112-415b-95d2-07904b0d1a1c',\n  headers: {\n    authorization\n  }\n});",
+              "err": {
+                "message": "CypressError: `cy.request()` failed on:\n\nhttps://adopet-api-i8qu.onrender.com/mensagem/11643cd6-7112-415b-95d2-07904b0d1a1c\n\nThe response we received from your web server was:\n\n  > 401: Unauthorized\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: https://adopet-api-i8qu.onrender.com/mensagem/11643cd6-7112-415b-95d2-07904b0d1a1c\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMTY0M2NkNi03MTEyLTQxNWItOTVkMi0wNzkwNGIwZDFhMWMiLCJhZG9wdGVyTmFtZSI6IkFuYSBkZSBKZXN1cyIsImlhdCI6MTcwOTA0MTMwNSwiZXhwIjoxNzA5MzAwNTA1fQ.nhiaUyKdvN8RVxCkvne2gyI5n_pYnY_OMMdogMMqOlc\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/13.10.0 Chrome/118.0.5993.159 Electron/27.3.10 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\"\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 401 - Unauthorized\nHeaders: {\n  \"date\": \"Sat, 08 Jun 2024 18:20:24 GMT\",\n  \"content-type\": \"application/json; charset=utf-8\",\n  \"content-length\": \"91\",\n  \"connection\": \"keep-alive\",\n  \"cf-ray\": \"890ae54b0eaf1aba-GRU\",\n  \"cf-cache-status\": \"DYNAMIC\",\n  \"content-encoding\": \"gzip\",\n  \"etag\": \"W/\\\"43-wXWvnadL6A5lxmYWaq7JjOmSjgU\\\"\",\n  \"vary\": \"Origin, Accept-Encoding\",\n  \"access-control-allow-credentials\": \"true\",\n  \"access-control-expose-headers\": \"Authorization\",\n  \"rndr-id\": \"c9868e20-28a3-4feb\",\n  \"x-powered-by\": \"Express\",\n  \"x-render-origin-server\": \"Render\",\n  \"server\": \"cloudflare\",\n  \"alt-svc\": \"h3=\\\":443\\\"; ma=86400\"\n}\nBody: {\n  \"statusCode\": 401,\n  \"message\": \"JWT inválido\",\n  \"error\": \"Unauthorized\"\n}\n\n\nhttps://on.cypress.io/request",
+                "estack": "CypressError: `cy.request()` failed on:\n\nhttps://adopet-api-i8qu.onrender.com/mensagem/11643cd6-7112-415b-95d2-07904b0d1a1c\n\nThe response we received from your web server was:\n\n  > 401: Unauthorized\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: https://adopet-api-i8qu.onrender.com/mensagem/11643cd6-7112-415b-95d2-07904b0d1a1c\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMTY0M2NkNi03MTEyLTQxNWItOTVkMi0wNzkwNGIwZDFhMWMiLCJhZG9wdGVyTmFtZSI6IkFuYSBkZSBKZXN1cyIsImlhdCI6MTcwOTA0MTMwNSwiZXhwIjoxNzA5MzAwNTA1fQ.nhiaUyKdvN8RVxCkvne2gyI5n_pYnY_OMMdogMMqOlc\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/13.10.0 Chrome/118.0.5993.159 Electron/27.3.10 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\"\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 401 - Unauthorized\nHeaders: {\n  \"date\": \"Sat, 08 Jun 2024 18:20:24 GMT\",\n  \"content-type\": \"application/json; charset=utf-8\",\n  \"content-length\": \"91\",\n  \"connection\": \"keep-alive\",\n  \"cf-ray\": \"890ae54b0eaf1aba-GRU\",\n  \"cf-cache-status\": \"DYNAMIC\",\n  \"content-encoding\": \"gzip\",\n  \"etag\": \"W/\\\"43-wXWvnadL6A5lxmYWaq7JjOmSjgU\\\"\",\n  \"vary\": \"Origin, Accept-Encoding\",\n  \"access-control-allow-credentials\": \"true\",\n  \"access-control-expose-headers\": \"Authorization\",\n  \"rndr-id\": \"c9868e20-28a3-4feb\",\n  \"x-powered-by\": \"Express\",\n  \"x-render-origin-server\": \"Render\",\n  \"server\": \"cloudflare\",\n  \"alt-svc\": \"h3=\\\":443\\\"; ma=86400\"\n}\nBody: {\n  \"statusCode\": 401,\n  \"message\": \"JWT inválido\",\n  \"error\": \"Unauthorized\"\n}\n\n\nhttps://on.cypress.io/request\n    at <unknown> (http://localhost:53493/__cypress/runner/cypress_runner.js:132757:72)\n    at tryCatcher (http://localhost:53493/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:53493/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:53493/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:53493/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:53493/__cypress/runner/cypress_runner.js:1701:18)\n    at _drainQueueStep (http://localhost:53493/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:53493/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:53493/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:53493/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://cypress_alura/./cypress/e2e/api-mensagens.cy.js:5:11)",
+                "diff": null
+              },
+              "uuid": "cdaa8565-4da1-42ee-a48d-a8dac48bfa62",
+              "parentUUID": "2cf654a0-4d87-4324-aeb2-e59f3798836a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "cdaa8565-4da1-42ee-a48d-a8dac48bfa62"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1022,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[name]_[status]_[datetime]--report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report",
+        "reportFilename": "[name]_[status]_[datetime]--report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "ddmmyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
